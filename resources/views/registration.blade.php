@@ -1,47 +1,32 @@
-@extends('layout')  
-
-@section('title', 'Registration')   <?php  //tab e title dekhabe  ?>
-
-
-@include('header1')   <!-- header file er content eikhane add kora  -->
-
+@extends('layout')
+@section('title', 'Registration')
+@include('header1')
 
 @section('txt1')
     <h1>Registration Form</h1>
 @endsection
 
-<!--section txt1 - e ja thakbe ta layout - yield txt1 receive korbe  -->
-
-
-
 @section('main')
 <div class="containerRegi">
-
-    <form action="/add" method="POST">  <!-- routes/web.php er /add e jabe -->
+    <form action="/add" method="POST">
         @csrf
-        <label for="username" >Name</label>
-        <input type="text" id="name" name="name" required>
-
-
-        <label for="username" >Email Address</label>
-        <input type="email" id="email" name="email" required>
-
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
         
         <label for="password">Password</label>
-        <input type="text" id="password" name="password" required>
-
-        <label for="role">Role</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
         
-        <select name="role" id="role" value="student">
+        <label for="role">Role</label>
+        <select name="role" id="role">
             <option value="Student">Student</option>    
             <option value="Teacher">Teacher</option>    
             <option value="Admin">Admin</option>    
         </select>
-
-
-
+        
         <input type="submit" value="Register">
     </form>
-
 </div>
 @endsection

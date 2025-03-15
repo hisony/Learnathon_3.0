@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'teacher')
+@section('title', 'admin')
 
 
 @include('headerAdmin')

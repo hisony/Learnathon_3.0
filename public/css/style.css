@@ -1,104 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+/* Common styling for all form containers */
+.containerLogin, .containerRegi, .box1 {
+    width: 100%;
+    max-width: 800px; /* Increased width for .box1 */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling the form header */
+  h1 {
+    text-align: center; /* Center align the heading */
+    font-size: 36px;
+    color: #003c47; /* Dark cyan color */
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #005766, #003c47); /* Gradient for h1 */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    color: transparent; /* Make text transparent to show gradient */
+  }
 
-
-body {
-    background-color: #cdd1d4;
-}
-
-.content {
-    background-color: #79a8b5;
-    text-align: center;
-    padding: 40px;
-    color: white;
-    font-family: 'Arial Narrow Bold', sans-serif;
-    font-size: 30px;
-    /* display: flex; */
-    padding: 70px 40px;
-
-
-}
-
-
-header {
-    background-color: #b5dfe4b1;
-    font-size: 30px;
-}
-
-nav ul {
-    display: flex;
-}
-
-nav li {
-    list-style: none;
-    margin-left: 30px;
-    padding: 3px;
-
-}
-
-header a {
-    text-decoration: none;
-    padding: 5px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 600;
-}
-
-header a:hover {
-    background-color: #e39351a9;
-    color: black;
-}
-
-header a:visited {
-
-    color: black;
-}
-
-.containerLogin,
-.containerRegi {
-    background-color: #000000;
-    /* height: 50%; */
-    width: 50%;
-    padding: 50px 50px;
+  h2 {
+    text-align: center; /* Center align the heading */
+    font-size: 24px;
+    color: #003c47; /* Dark cyan color */
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #005766, #003c47); /* Gradient for h1 */
+    -webkit-background-clip: text; /* Clip gradient to text */
+    color: transparent; /* Make text transparent to show gradient */
+  }
+  
+  /* Horizontal line below the header */
+  .box1 hr, .containerLogin hr, .containerRegi hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, #005766, #003c47); /* Gradient line */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling form labels */
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; /* Dark gray for labels */
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  /* Styling input fields and select dropdown */
+  input[type="text"], input[type="email"], input[type="password"], input[type="number"], select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc; /* Soft border */
+    border-radius: 4px;
     box-sizing: border-box;
-    margin: 0px auto;
-    border-radius: 0px 0px 20px 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-form label {
+    font-size: 16px;
+    background-color: #f9f9f9; /* Light gray background */
+  }
+  
+  /* Styling the submit button */
+  input[type="submit"] {
+    background: linear-gradient(90deg, #005766, #003c47); /* Gradient background */
     color: white;
-
-}
-
-form input {
-    font-size: 30px;
-    margin: 5px;
-}
-
-input[type="submit"] {
-    background-color: rgb(41, 189, 63);
-    color: whitesmoke;
     border: none;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-input[type="submit"]:hover {
-    background-color: rgb(58, 212, 81);
+    padding: 14px 20px;
+    width: 100%;
+    border-radius: 4px;
     cursor: pointer;
-}
-select{
-    font-size: 20px;
-    font-weight: bold;
-}
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background: linear-gradient(90deg, #003c47, #005766); /* Reverse gradient on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .containerLogin, .containerRegi, .box1 {
+      padding: 15px;
+      max-width: 90%; /* Keep width flexible on small screens */
+    }
+  
+    input[type="submit"] {
+      padding: 12px 18px;
+    }
+  }
+  

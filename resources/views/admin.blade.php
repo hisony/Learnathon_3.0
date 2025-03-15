@@ -13,7 +13,7 @@
 @section('main')
 
 <div class="box1"> 
-    <h1>Add a New Course</h1>
+    <h2>Add a New Course</h2>
     <hr>
     <form action="/addCourse" method="post">
         @csrf
