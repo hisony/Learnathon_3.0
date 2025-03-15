@@ -52,8 +52,8 @@ class UserController extends Controller
                 } elseif ($user->role == 'Teacher') {
                     return view('teacher');
 
-                } elseif ($user->role == 'Instructor') {
-                    return view('instructor');
+                } elseif ($user->role == 'Admin') {
+                    return view('admin');
 
                 } else {
                     return view('login');

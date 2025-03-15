@@ -3,7 +3,7 @@
 @section('title', 'student')
 
 
-@include('header2')
+@include('headerStudent')
 
 
 @section('txt1')
